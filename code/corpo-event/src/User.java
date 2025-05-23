@@ -16,40 +16,18 @@ public class User {
     }
 
     /** Getters**/
-    public String getFirstName() {
-        return this.firstName;
-    }
-    public String getLastName() {
-        return this.lastName;
-    }
-    public String getMail() {
-        return this.mail;
-    }
-    public String getEmployeeNumber() {
-        return this.employeeNumber;
-    }
-    public boolean isAuthenticated() {
-        return this.isAuthenticated;
-    }
+    public String getFirstName() {return this.firstName;}
+    public String getLastName() {return this.lastName;}
+    public String getMail() {return this.mail;}
+    public String getEmployeeNumber() {return this.employeeNumber;}
+    public boolean isAuthenticated() {return this.isAuthenticated;}
 
     /** Setters**/
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-    public void setMail(String mail) {
-        this.mail = mail;
-    }
-    public void setEmployeeNumber(String employeeNumber) {
-        this.employeeNumber = employeeNumber;
-    }
-    public void setAuthenticated(boolean isAuthenticated) {
-        this.isAuthenticated = isAuthenticated;
-    }
-    public void setPassword(String password) {
-        this.password = password;
-    }
+    public void setFirstName(String firstName) {this.firstName = firstName;}
+    public void setLastName(String lastName) {this.lastName = lastName;}
+    public void setMail(String mail) {this.mail = mail;}
+    public void setEmployeeNumber(String employeeNumber) {this.employeeNumber = employeeNumber;}
+    public void setAuthenticated(boolean isAuthenticated) {this.isAuthenticated = isAuthenticated;}
+    public void setPassword(String password) {this.password = password;}
 }
 
