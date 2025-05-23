@@ -1,6 +1,10 @@
 import java.util.*;
 public class CollaboratorService {
-    private List<Collaborator> collaborators;
+    private final List<Collaborator> collaborators;
+
+    /**
+     * Constructor of the class
+     * */
     public CollaboratorService() {
         this.collaborators = new ArrayList<>();
     }
@@ -10,6 +14,10 @@ public class CollaboratorService {
      * @param {collab} : a collaborator
      * */
     public void createCollaborator(Collaborator collab){
-        this.collaborators.add(collab);
+        if(!collaborators.contains(collab)){
+            collaborators.add(collab);
+        }else{
+            System.out.println("Collaborator already exists");
+        }
     }
 }
