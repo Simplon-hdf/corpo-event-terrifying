@@ -20,4 +20,12 @@ public class CollaboratorService {
             System.out.println("Collaborator already exists");
         }
     }
+
+    /**
+     * Method to delete a collaborator
+     * @param {collab} : a collaborator
+     * */
+    public void deleteCollaborator(Collaborator collab){
+        collaborators.remove(collab);
+    }
 }
