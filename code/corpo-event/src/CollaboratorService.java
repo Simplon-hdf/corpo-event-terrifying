@@ -37,4 +37,13 @@ public class CollaboratorService {
         int index = collaborators.indexOf(collab);
         collaborators.set(index, collab);
     }
+
+    /**
+     * Method to show the list of collaborators
+     */
+    public void showCollaborators(){
+        for(Collaborator collab : collaborators){
+            System.out.println(collab);
+        }
+    }
 }
