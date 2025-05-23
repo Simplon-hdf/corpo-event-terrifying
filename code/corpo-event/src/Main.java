@@ -1,5 +1,3 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         CollaboratorService service = new CollaboratorService();
@@ -13,4 +11,6 @@ public class Main {
         System.out.println("list of remaining collaborators");
 
     }
+}
+        Admin admin = new Admin();
 }
