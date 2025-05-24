@@ -5,7 +5,7 @@ public class Administrator extends User {
     private int adminLevel;
     private List<String> permissions;
 
-    public Administrator(String administratorId, int adminLevel, List<String> permissions, String firstName, String lastName, String mail, String password, String employeeNumber) {
+    public Administrator(String firstName, String lastName, String mail, String password, String employeeNumber, String administratorId, int adminLevel, List<String> permissions) {
         super(firstName,lastName,mail,password,employeeNumber);
         this.administratorId = administratorId;
         this.adminLevel = adminLevel;
