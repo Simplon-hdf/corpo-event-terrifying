@@ -21,6 +21,9 @@ public class Event {
     public String getEventLocation() {return eventLocation;}
     public LocalDateTime getEventDate() {return eventDate;}
     public int getEventLikes() {return eventLikes;}
+    public String getEventData() {
+        return getEventTitle() + "\n" + getEventDescription() + "\n" + getEventLocation() + "\n" + getEventDate() + "\n" + getEventLikes();
+    }
 
     /** Setters**/
     public void setEventTitle(String eventTitle) {this.eventTitle = eventTitle;}

@@ -39,6 +39,5 @@ public class Main {
         eventService.deleteEvent(event2);
         System.out.println("=> List of remaining events");
         eventService.showEvents();
-
     }
 }

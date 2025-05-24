@@ -14,6 +14,10 @@ public class Collaborator extends User {
     public String getCollaboratorId() {return collaboratorId;}
     public String getJobTitle() {return jobTitle;}
     public String getSupervisorName() {return supervisorName;}
+    @Override
+    public String getMoreData() {
+        return getCollaboratorId() + "\n" + getJobTitle() + "\n" + getSupervisorName();
+    }
 
     /** Setters**/
     public void setCollaboratorId(String collaboratorId) {this.collaboratorId = collaboratorId;}

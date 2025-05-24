@@ -5,7 +5,7 @@ public class Administrator extends User {
     private int adminLevel;
     private List<String> permissions;
 
-    public Administrator(String administratorId, int adminLevel, List<String> permissions, String firstName, String lastName, String mail, String password, String employeeNumber) {
+    public Administrator(String firstName, String lastName, String mail, String password, String employeeNumber, String administratorId, int adminLevel, List<String> permissions) {
         super(firstName,lastName,mail,password,employeeNumber);
         this.administratorId = administratorId;
         this.adminLevel = adminLevel;
@@ -16,6 +16,9 @@ public class Administrator extends User {
     public String getAdministratorId() {return administratorId;}
     public int getAdminLevel() {return adminLevel;}
     public List<String> getPermissions() {return permissions;}
+    public String getMoreData() {
+        return getAdministratorId() + "\n" + getAdminLevel() + "\n" + getPermissions();
+    }
 
     /** Setters */
     public void setAdministratorId(String administratorId) {this.administratorId = administratorId;}

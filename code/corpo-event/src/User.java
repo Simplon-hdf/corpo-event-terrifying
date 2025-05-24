@@ -1,4 +1,4 @@
-public class User {
+public abstract class User {
     private String firstName;
     private String lastName;
     private String mail;
@@ -21,6 +21,10 @@ public class User {
     public String getMail() {return this.mail;}
     public String getEmployeeNumber() {return this.employeeNumber;}
     public boolean isAuthenticated() {return this.isAuthenticated;}
+    public String getUserData() {
+        return getFirstName() + "\n" + getLastName() + "\n" + getMail() + "\n" + getEmployeeNumber() + getMoreData();
+    }
+    public abstract String getMoreData();
 
     /** Setters**/
     public void setFirstName(String firstName) {this.firstName = firstName;}
