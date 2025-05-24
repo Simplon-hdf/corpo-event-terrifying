@@ -16,6 +16,9 @@ public class Administrator extends User {
     public String getAdministratorId() {return administratorId;}
     public int getAdminLevel() {return adminLevel;}
     public List<String> getPermissions() {return permissions;}
+    public String getMoreData() {
+        return getAdministratorId() + "\n" + getAdminLevel() + "\n" + getPermissions();
+    }
 
     /** Setters */
     public void setAdministratorId(String administratorId) {this.administratorId = administratorId;}
