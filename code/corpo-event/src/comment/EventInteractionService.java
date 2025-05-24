@@ -17,5 +17,9 @@ public class EventInteractionService {
         this.eventInteractions.remove(comment);
     }
 
+    /** Method to update a comment */
+    public void updateComment(EventInteraction comment){
+        int index = this.eventInteractions.indexOf(comment);
+    }
 
 }
