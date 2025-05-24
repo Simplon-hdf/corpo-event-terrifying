@@ -12,7 +12,10 @@ public class EventInteractionService {
         this.eventInteractions.add(comment);
     }
 
-    
+    /** Method to delete a comment */
+    public void deleteComment(EventInteraction comment){
+        this.eventInteractions.remove(comment);
+    }
 
 
 }
