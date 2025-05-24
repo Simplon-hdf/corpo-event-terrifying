@@ -1,15 +1,21 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-        CollaboratorService service = new CollaboratorService();
+        /** Collaborator**/
+        CollaboratorService collaboratorService = new CollaboratorService();
         Collaborator c1 = new Collaborator("Ali", "Baba", "ali@mail.com", "pass123", "E001", "C101", "Dev", "Axel");
         Collaborator c2 = new Collaborator("Sara", "Ben", "sara@mail.com", "pass456", "E002", "C102", "Tester", "Yousra");
-        service.createCollaborator(c1);
-        service.createCollaborator(c2);
-        System.out.println("=>list of collaborators created");
-        service.showCollaborators();
-        System.out.println("=>Collaborator deleted");
-        service.deleteCollaborator(c1);
-        System.out.println("=>list of remaining collaborators");
-        service.showCollaborators();
+        collaboratorService.createCollaborator(c1);
+        collaboratorService.createCollaborator(c2);
+        collaboratorService.showCollaborators();
+
+        /** Administrator**/
+        AdministratorService adminService = new AdministratorService();
+        Administrator a1 = new Administrator("Ali", "Baba", "ali@mail.com", "pass123", "E001", "C101", 5, Arrays.asList("READ", "UPDATE", "DELETE"));
+        Administrator a2 = new Administrator("Sara", "Ben", "sara@mail.com", "pass456", "E002", "C102", 1, Arrays.asList("CREATE","READ", "UPDATE", "DELETE"));
+        adminService.createAdministrator(a1);
+        adminService.createAdministrator(a2);
+        adminService.showAdministrators();
     }
 }

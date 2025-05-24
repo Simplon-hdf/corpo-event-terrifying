@@ -1,5 +1,5 @@
 import java.util.*;
-public class CollaboratorService {
+public class CollaboratorService implements CollaboratorInterface {
     private final List<Collaborator> collaborators;
 
     /**
@@ -38,12 +38,17 @@ public class CollaboratorService {
         collaborators.set(index, collab);
     }
 
+    public void showCollaborator(Collaborator collab){
+        System.out.println(collab.getUserData());
+    }
+
     /**
      * Method to show the list of collaborators
      */
     public void showCollaborators(){
-        for(Collaborator collab : collaborators){
-            System.out.println(collab);
+        for (int i = 0; i < collaborators.size(); i++) {
+            System.out.println("------------");
+            showCollaborator(collaborators.get(i));
         }
     }
 }
