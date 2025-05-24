@@ -28,6 +28,12 @@ public class EventInteraction {
     public void setCommentAuthor(User commentAuthor) {this.commentAuthor = commentAuthor;}
     public void setCommentDate(LocalDateTime commentDate) {this.commentDate = commentDate;}
 
+    public String toString() {
+        return "Comment : " + this.getCommentContent() + "\n"
+                + "Likes : " + this.getCommentLikes() + "\n"
+                + "Author : " + this.getCommentAuthor() + "\n"
+                + "Date : " + this.getCommentDate();
+    }
 
 
 }
