@@ -1,3 +1,4 @@
+import event.Event;
 import event.EventService;
 import user.*;
 

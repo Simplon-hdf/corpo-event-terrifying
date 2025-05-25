@@ -1,3 +1,4 @@
+package event;
 import java.util.*;
 public class EventService implements EventInterface{
     private final List<Event> events;

@@ -1,3 +1,4 @@
+package user;
 import java.util.*;
 public class AdministratorService implements AdministratorInterface{
     private final List<Administrator> administrators;

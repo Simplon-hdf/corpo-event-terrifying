@@ -1,3 +1,4 @@
+package user;
 public interface AdministratorInterface {
     void createAdministrator(Administrator admin);
     void deleteAdministrator(Administrator admin);

@@ -1,3 +1,4 @@
+package user;
 import java.util.*;
 public class CollaboratorService implements CollaboratorInterface {
     private final List<Collaborator> collaborators;

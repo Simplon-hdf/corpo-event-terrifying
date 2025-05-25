@@ -1,3 +1,4 @@
+package event;
 import java.time.LocalDateTime;
 
 public class Event {

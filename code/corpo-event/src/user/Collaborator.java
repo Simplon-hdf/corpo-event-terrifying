@@ -1,3 +1,4 @@
+package user;
 public class Collaborator extends User {
     private String collaboratorId;
     private String jobTitle;
