@@ -9,9 +9,17 @@ public class EventInteractionService {
 
     /**
      * Method to create a comment
-     * @param comment
+     * @param comment : a comment
      */
     public void createComment(EventInteraction comment){
         this.eventInteractions.add(comment);
+    }
+
+    /**
+     * Method to delete a comment
+     * @param comment : a comment 
+     */
+    public void deleteComment(EventInteraction comment){
+        this.eventInteractions.remove(comment);
     }
 }
