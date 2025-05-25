@@ -7,6 +7,10 @@ public class EventInteractionService {
     /** Constructor of the class **/
     public EventInteractionService() { this.eventInteractions = new ArrayList<>(); }
 
+    /**
+     * Method to create a comment
+     * @param comment
+     */
     public void createComment(EventInteraction comment){
         this.eventInteractions.add(comment);
     }
