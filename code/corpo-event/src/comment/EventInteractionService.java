@@ -23,7 +23,23 @@ public class EventInteractionService {
         this.eventInteractions.remove(comment);
     }
 
+    /**
+     * Method to update a comment
+     * @param comment : a comment
+     */
     public void updateComment(EventInteraction comment){
         int index = this.eventInteractions.indexOf(comment);
+    }
+
+    public void showComment(EventInteraction comment){
+        System.out.println(comment.toString());
+    }
+
+    /** Method to show the list of comments */
+    public void showComments(){
+        for (int i = 0; i < eventInteractions.size(); i++) {
+            System.out.println("------------");
+            showComment(eventInteractions.get(i));
+        }
     }
 }
