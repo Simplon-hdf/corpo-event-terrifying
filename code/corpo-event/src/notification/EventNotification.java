@@ -1,4 +1,4 @@
-package event;
+package notification;
 import java.time.LocalDateTime;
 
 public class EventNotification {
