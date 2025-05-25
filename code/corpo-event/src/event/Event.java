@@ -2,13 +2,15 @@ package event;
 import java.time.LocalDateTime;
 
 public class Event {
+    private String eventId;
     private String eventTitle;
     private String eventDescription;
     private String eventLocation;
     private LocalDateTime eventDate;
     private int eventLikes;
 
-    public Event(String eventTitle, String eventDescription, String eventLocation, LocalDateTime eventDate, int eventLikes) {
+    public Event(String eventId, String eventTitle, String eventDescription, String eventLocation, LocalDateTime eventDate, int eventLikes) {
+        this.eventId = eventId;
         this.eventTitle = eventTitle;
         this.eventDescription = eventDescription;
         this.eventLocation = eventLocation;

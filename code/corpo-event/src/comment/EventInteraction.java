@@ -3,13 +3,15 @@ import user.User;
 import java.time.LocalDateTime;
 
 public class EventInteraction {
+    private String commentId ;
     private String commentContent ;
     private int commentLikes;
     private User commentAuthor;
     private LocalDateTime commentDate ;
 
     /** Constructor of the class **/
-    public EventInteraction(String commentContent, int commentLikes, User commentAuthor, LocalDateTime commentDate) {
+    public EventInteraction(String commentId, String commentContent, int commentLikes, User commentAuthor, LocalDateTime commentDate) {
+        this.commentId = commentId;
         this.commentContent = commentContent;
         this.commentLikes = commentLikes;
         this.commentAuthor = commentAuthor;

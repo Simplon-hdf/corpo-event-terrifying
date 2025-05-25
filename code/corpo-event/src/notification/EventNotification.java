@@ -2,11 +2,13 @@ package notification;
 import java.time.LocalDateTime;
 
 public class EventNotification {
+    private String notificationId;
     private String notificationTitle;
     private String notificationDescription;
     private LocalDateTime notificationDate;
 
-    public EventNotification(String notificationTitle, String notificationDescription, LocalDateTime notificationDate) {
+    public EventNotification(String notificationId, String notificationTitle, String notificationDescription, LocalDateTime notificationDate) {
+        this.notificationId = notificationId;
         this.notificationTitle = notificationTitle;
         this.notificationDescription = notificationDescription;
         this.notificationDate = notificationDate;
