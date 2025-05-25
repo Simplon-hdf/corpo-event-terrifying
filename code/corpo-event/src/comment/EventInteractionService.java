@@ -17,9 +17,13 @@ public class EventInteractionService {
 
     /**
      * Method to delete a comment
-     * @param comment : a comment 
+     * @param comment : a comment
      */
     public void deleteComment(EventInteraction comment){
         this.eventInteractions.remove(comment);
+    }
+
+    public void updateComment(EventInteraction comment){
+        int index = this.eventInteractions.indexOf(comment);
     }
 }
